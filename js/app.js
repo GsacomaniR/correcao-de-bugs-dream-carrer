@@ -7,6 +7,12 @@ const formulario = document.querySelector('#form-perfil');
 formulario.addEventListener('submit', (evento) => {
   evento.preventDefault();
 
+// Validação nativa do HTML5 (required, minLength, maxLength, etc.)
+if (!formulario.checkValidity()) {
+  formulario.reportValidity();
+  return;
+}
+
   const campos = formulario.elements;
   const nome = campos.nome.value;
   const hobbies = campos.hobbies.value.split(',');
