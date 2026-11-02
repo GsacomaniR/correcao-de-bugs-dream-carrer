@@ -191,8 +191,13 @@ main {
 /* Formulário */
 .formulario {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* campos um embaixo do outro */
   gap: 1.25rem;
+}
+
+.formulario .botao {
+  width: 100%;
+  align-self: stretch;
 }
 
 .campo {
