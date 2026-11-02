@@ -43,10 +43,19 @@
       <form id="form-perfil" class="formulario">
         <div class="campo">
           <div>
-            <label>Nome</label>
+            <label for="nome">Nome</label>
           </div>
           <div>
-            <input type="number" id="nome" name="nome" placeholder="Ex.: Aline Santos">
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Ex.: Aline Santos">
+              required
+              minLength="2"
+              maxLength="60"
+              autocomplete="name"
+              >
           </div>
         </div>
 
