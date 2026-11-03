@@ -209,7 +209,7 @@ main {
 
 .campo label {
   font-weight: 700;
-  color: #cfd3e3;
+  color: var(--cor-tinta);  /* #1b2140 */
 }
 
 .campo input,
